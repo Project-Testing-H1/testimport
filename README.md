@@ -23,6 +23,8 @@ require "erblint-github/linters"
 ```yaml 
 ---
 linters:
+  GitHub::Accessibility::IframeHasTitle:
+    enabled: true
   GitHub::Accessibility::ImageHasAlt:
     enabled: true
   GitHub::Accessibility::NoAriaLabelMisuse:
@@ -33,6 +35,7 @@ linters:
 
 ### Rules
 
+- [GitHub::Accessibility::IframeHasTitle](./docs/rules/accessibility/iframe-has-title.md)
 - [GitHub::Accessibility::ImageHasAlt](./docs/rules/accessibility/no-aria-label-misuse.md)
 - [GitHub::Accessibility::NoAriaLabelMisuse](./docs/rules/accessibility/image-has-alt.md)
 - [GitHub::Accessibility::NoRedundantImageAlt](./docs/rules/accessibility/no-redundant-image-alt.md)
